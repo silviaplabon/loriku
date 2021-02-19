@@ -91,10 +91,9 @@
 }
 
 .iconStyle{
-    width: 15% !important;
+    width: 17% !important;
     height:48px;
-    background-color:#333333;
-    color:white;
+    color:black;
 }
 .color333{
     color:#333333;
@@ -104,6 +103,35 @@
     color:#1C3FA8;
     font-size:20px;
 }
+/* end statsSection */
+/* starts cliSection */
+.cliSection{
+    display:flex;
+    margin-top:30px;
+    justify-content:center;
+}
+.cliImg{
+   width:56%;  
+}
+.cliImg img{
+    width:100%;
+    color:white!important;
+    background-color: white!important;
+}
+.cliText{
+  display:grid;
+  grid-gap:20px;
+  width:44%;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.h2Cli{
+    padding:0 5px;
+    text-align:center;
+    color:black; 
+    font-size:16px;
+}
+/* end cliSection */
 @media only screen and (min-device-width: 200px) and (max-device-width: 295px){
     .liStyle{
         padding:2px;
@@ -128,6 +156,15 @@
     }
     .color1C3{ font-size:18px;padding-bottom:20px;}
     .color333{ font-size:22px;}
+    /* endstatssection */
+    .cliText{ grid-gap:7px;}
+    .cliDesign{
+        height:80px;
+        padding:5px;
+        border-radius:2px;
+        box-shadow: 0 1px 1px gray;
+        }
+    .h2Cli{ font-size:12px;}
 }
 
 
@@ -153,6 +190,15 @@
     }
     .color1C3{ font-size:15px;padding-bottom:20px;}
     .color333{ font-size:17px;}
+    /* end statsSection */
+    .cliDesign{height:60px;}
+    .cliText{ grid-gap:10px;}
+    .cliDesign{
+        height:80px;
+        padding:10px;
+        border-radius:7px;
+        box-shadow: 0 3px 10px gray;
+        }
 }
 
 
@@ -162,4 +208,11 @@
         grid-template-columns:repeat(3,1fr)!important;
         text-align:center;
     }
+    .cliText{ grid-gap:25px;}
+    .cliDesign{
+        height:90px;
+        padding:20px;
+        border-radius:10px;
+        box-shadow: 0 3px 10px gray;
+        }
 }

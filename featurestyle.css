@@ -1,0 +1,234 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal!important;
+}
+
+.topSection {
+    background-color: #047AED;
+    color: white;
+    padding-bottom: 50px;
+}
+
+a {
+    color: white!important;
+    text-decoration: none!important;
+}
+
+.container {
+    margin: 0 13.78%;
+    padding: 0 2.62%;
+}
+
+.topNavbar {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70px;
+}
+
+.titleDiv h1 {
+    font-size: 30px;
+}
+
+.ulStyle {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.liStyle {
+    padding: 15px;
+}
+
+/* topSection->topNavbar(titleDiv and linkDiv) */
+
+.infoSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.imgInfo img {
+    width:180px;
+    margin-top: 30px;  
+}
+
+/* end infosection */
+
+/* platformsection */
+
+.icon {
+    color: black;
+    font-size: 39px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    margin: 12px;
+    gap: 20px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.platformSection {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* start bottom section */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 17%;
+    background-color: #002240;
+    height: 160px;
+    padding-top: 40px;
+    color: white;
+}
+
+.pagerenderUl li {
+    width: 100%;
+    list-style-type: none;
+}
+
+.link .iconbottom {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.iconbottom {
+    font-size: 50px;
+}
+
+@media only screen and (min-device-width: 296px) and (max-device-width: 765px) {
+    .titleDiv h1 {
+        font-size: 23px;
+    }
+    /* infosection */
+    .infoSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:50px;
+    }
+    .ulStyle {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 16px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
+        height:60px;
+        width:80%;
+        text-align:center;
+        margin:0 auto;
+        margin-bottom:30px;
+    }
+    
+    .topNavbar {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 60px;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .textInfo {
+        margin-top: 30px;
+    }
+    .textInfo h1 {
+        font-size: 40px;
+    }
+    /* end infoSection */
+    .instrumentSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 330px;
+    }
+    .copyright {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .pagerenderUl {
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+    .link {
+        display: grid;
+        grid-template-columns: repeat(4, 8%);
+        grid-gap: 3px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .iconbottom {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-device-width: 765px) and (max-device-width: 2100px) {
+    .textInfo {
+        margin-top: 80px;
+    }
+    .textInfo h1 {
+        font-size: 58px;
+    }
+    .infoSection { height:200px;}
+    .imgInfo{
+        display:grid;
+        justify-content:flex-end;
+        align-items:flex-end;
+    }
+    .instrumentSection {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .firstrow {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .server {
+        grid-column: 1/span 3;
+    }
+    .secondrow {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .network {
+        grid-column: 1/span 2;
+    }
+    .thirdrow {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding-bottom: 40px;
+    }
+    .card {
+        height: 100%;
+    }
+    .link {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)!important;
+    }
+}
